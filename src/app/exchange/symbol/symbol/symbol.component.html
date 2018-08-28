@@ -1,0 +1,6 @@
+<div>
+  <select [(ngModel)] = "selectedSymbol" (ngModelChange) = 'onSymbolSelected($event)' >
+    <option *ngFor = "let s of symbols" [value] = "s.symbol">{{s.symbol}}</option>
+    
+  </select>
+</div>

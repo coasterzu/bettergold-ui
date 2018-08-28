@@ -1,0 +1,19 @@
+<div>
+
+
+    <table style="  width: 100%;border: none; border-collapse: collapse;">
+        <tbody>
+            <tr *ngFor="let key of objectKeys(depthData.bids)">
+
+                <td style=" text-align: center!important;">
+                    <a href="# ">{{depthData.bids[key].price}}</a>
+                </td>
+                <td style=" text-align: center!important;
+                        ">
+                    <a href="# ">{{depthData.bids[key].quantity}}</a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,33 @@
+<div class="buy-order-form-comp">
+  <form (ngSubmit)="onBuy()" novalidate>
+    <div class="form-group row">
+      <label for="price" class="col-sm-2 col-form-label">Price</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="price">
+      </div>
+
+    </div>
+
+    <div class="form-group row">
+      <label for="quantity" class="col-sm-2 col-form-label">Quantity</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="quantity">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="buytotal" class="col-sm-2 col-form-label">Total</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="buytotal">
+      </div>
+    </div>
+
+    <div class="row" style="margin: auto;margin-top:25px;">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <button type="submit" class="btn  btn-block btn-dark-green" style="border-radius:0;color:white;background-image: linear-gradient(to bottom,#1a8523 0,#1a8523 100%);">
+        BUY</button>
+      </div>
+    </div>
+
+  </form>
+</div>

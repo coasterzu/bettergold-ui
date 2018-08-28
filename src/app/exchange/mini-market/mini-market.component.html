@@ -1,0 +1,30 @@
+<div>
+
+
+    <table style="  width: 100%;border: none;">
+      <thead>
+        <tr>
+          <th scope="col" style="text-align: left">Symbol</th>
+          <th scope="col" style="text-align: left">Price </th>
+          <th scope="col" style="text-align: left; padding-right: 25px;">Volume</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of objectKeys(miniMarketTradeData.trades)">
+  
+          <td style="text-align: left;">
+            <a href="# ">{{miniMarketTradeData.trades[t].symbol}}</a>
+          </td>
+  
+          <td style="text-align: left;">
+            <a href="# ">{{miniMarketTradeData.trades[t].price}}</a>
+          </td>
+          <td style="text-align: center">
+            <a href="# ">{{miniMarketTradeData.trades[t].volume}}</a>
+          </td>
+        
+  
+        </tr>
+      </tbody>
+    </table>
+  </div>

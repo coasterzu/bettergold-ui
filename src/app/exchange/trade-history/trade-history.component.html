@@ -1,0 +1,28 @@
+<div>
+
+
+    <table style="  width: 100%;border: none;">
+        <thead>
+            <tr>
+              <th scope="col" style="text-align: left">Quantity</th>
+              <th scope="col" style="text-align: center">Price    </th>
+              <th scope="col" style="text-align: right; padding-right: 25px;">Time</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr *ngFor="let t of  tradeData.reverse() ">
+
+                <td style= "text-align: left;">
+                          <a href="# ">{{t.price}}</a>
+                </td>
+                <td style="text-align: center">
+                    <a href="# ">{{t.quantity}}</a>
+                </td>
+                <td style="text-align: right">
+                    <a href="# ">{{t.time}}</a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
