@@ -11,10 +11,14 @@ export class LogoutComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+
+    localStorage.removeItem('token');
+    this.router.navigateByUrl("/#");
+    window.location.reload();
   }
 
   onLogout(): void {
-    
+    // currently not used/implemented.
   }
 
 }

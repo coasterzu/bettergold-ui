@@ -15,7 +15,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { AuthService } from './services/auth-service/auth.service';
 import { AuthGuardService } from './services/auth-guard-service/auth-guard.service';
-import { LogoutAuthGuardService } from './services/logout-auth-guard/logout-auth-guard.service';
+//import { LogoutAuthGuardService } from './services/logout-auth-guard/logout-auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
 import { BuyOrderComponent } from './exchange/order/buy-order/buy-order.component';
@@ -32,7 +32,7 @@ import { MiniMarketComponent } from './exchange/mini-market/mini-market.componen
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent},
-  { path: 'logout', component: LogoutComponent, canActivate: [LogoutAuthGuardService]},
+  { path: 'logout', component: LogoutComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService]},
   { path: 'exchange', component: ExchangeComponent, canActivate: [AuthGuardService]  },
@@ -77,7 +77,7 @@ const appRoutes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [AuthService,AuthGuardService,LogoutAuthGuardService,
+  providers: [AuthService,AuthGuardService,
     {
     provide: HTTP_INTERCEPTORS,
     useClass: JwtInterceptorService,

@@ -14,10 +14,10 @@ export class AuthService {
     let url: string = `${this.BASE_URL}/auth`;
     return this.http.post(url, user, {headers: this.headers}).toPromise();
   }
-  register(user: User): Promise<any> {
-    let url: string = `${this.BASE_URL}/register`;
-    return this.http.post(url, user, {headers: this.headers}).toPromise();
-  }
+  // register(user: User): Promise<any> {
+  //   let url: string = `${this.BASE_URL}/register`;
+  //   return this.http.post(url, user, {headers: this.headers}).toPromise();
+  // }
 
   isAuthenticated(token): Promise<any> {
     let url: string = `${this.BASE_URL}/authstatus`;

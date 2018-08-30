@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
       console.log("token--: "+user.json().token)
       localStorage.setItem('token', "Bearer "+user.json().token);
       localStorage.setItem('userChannel', user.json().userChannel);
-      this.router.navigateByUrl("/#");
+      this.router.navigateByUrl("/exchange");
       window.location.reload();
     })
     .catch((err) => {
