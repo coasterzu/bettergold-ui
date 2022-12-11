@@ -1,6 +1,6 @@
 # BettergoldUi
 
-#stick to older version of cli
+##stick to older version of cli
 npm uninstall -g @angular/cli
 npm install -g @angular/cli@6.0.8
 
