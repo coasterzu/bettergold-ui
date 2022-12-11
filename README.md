@@ -1,7 +1,9 @@
 # BettergoldUi
 
 ##stick to older version of cli
+
 npm uninstall -g @angular/cli
+
 npm install -g @angular/cli@6.0.8
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
